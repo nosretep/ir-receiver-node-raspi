@@ -34,3 +34,29 @@ Exploring Raspberry Pi as infrared receiver for fun sneaky projects
 http://forum.osmc.tv/showthread.php?tid=1954
 
 http://alexba.in/blog/2013/01/06/setting-up-lirc-on-the-raspberrypi/
+
+
+
+## Output
+
+At the end of the day, you should see something like this in your console:
+
+```
+0000000000004102 00 KEY_2 /home/pi/sharp.conf
+0000000000004102 01 KEY_2 /home/pi/sharp.conf
+0000000000004202 00 KEY_1 /home/pi/sharp.conf
+0000000000004202 01 KEY_1 /home/pi/sharp.conf
+0000000000004202 02 KEY_1 /home/pi/sharp.conf
+00000000000040a2 00 KEY_VOLUMEUP /home/pi/sharp.conf
+00000000000040a2 01 KEY_VOLUMEUP /home/pi/sharp.conf
+00000000000040a2 00 KEY_VOLUMEUP /home/pi/sharp.conf
+00000000000040a2 01 KEY_VOLUMEUP /home/pi/sharp.conf
+00000000000040a2 00 KEY_VOLUMEUP /home/pi/sharp.conf
+00000000000040a2 01 KEY_VOLUMEUP /home/pi/sharp.conf
+00000000000042a2 00 KEY_VOLUMEDOWN /home/pi/sharp.conf
+00000000000042a2 00 KEY_VOLUMEDOWN /home/pi/sharp.conf
+```
+
+Now let your imagination run wild.
+
+Bare in mind, each remote control will have a different configuration file based on frequencies and the internal workings of the remote control. There's no one size fits all, you have to manually map the buttons to configuration files (via irrecord command).
