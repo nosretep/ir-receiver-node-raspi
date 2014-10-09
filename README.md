@@ -17,7 +17,7 @@ Exploring Raspberry Pi as infrared receiver for fun sneaky projects
 * Grab an old television remote control (that has a strong ir signal)
 
 * Manually create a mapping of the buttons to a configuration file (irrecord, and this takes some time).
-   - Here are some of the keys that you will be forced to use 'irrecord --list-namespace'.
+   - Run 'irrecord --list-namespace' to see some of the key names of your buttons.
 
 * Check to see if your mappings worked by using 'irw' command, and pressing buttons while pointing at your infrared receiver. You'll see the key names as console output.
 
