@@ -1,0 +1,7 @@
+{
+  "name": "ir-receiver-node-raspi",
+  "description": "",
+  "dependencies": {
+    "requirejs": "~2.1.15"
+  }
+}
