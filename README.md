@@ -35,6 +35,8 @@ http://forum.osmc.tv/showthread.php?tid=1954 (skip the part about xml configurat
 
 http://alexba.in/blog/2013/01/06/setting-up-lirc-on-the-raspberrypi/
 
+If you stick with the instructions on those two pages, you should have everything that you need.
+
 
 ## Output
 
