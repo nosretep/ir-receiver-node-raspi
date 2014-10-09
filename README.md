@@ -29,9 +29,9 @@ Exploring Raspberry Pi as infrared receiver for fun sneaky projects
 * Point your remote control at the infrared receiver, and you should see the key names as console output.
 
 
-### Check out these two links for finer grain instructions for setting up the raspberry pi:
+### Very good instructions:
 
-http://forum.osmc.tv/showthread.php?tid=1954
+http://forum.osmc.tv/showthread.php?tid=1954 (skip the part about xml configurations)
 
 http://alexba.in/blog/2013/01/06/setting-up-lirc-on-the-raspberrypi/
 
