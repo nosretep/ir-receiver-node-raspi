@@ -6,18 +6,18 @@ Exploring Raspberry Pi as infrared receiver for fun sneaky projects
 
 ### Prerequisites:
 
-* Buy infrared receiver to your raspberry pi. You can buy one for about $1 on eBay.
+* Buy an infrared receiver for your raspberry pi. You pick one up for about $1 online.
 
 * Install all the Linux drivers for infrared (lirc).
 
-* Hook up the infrared receiver to your raspberry pi.
+* Hook up the infrared receiver to your raspberry pi's gpio pins.
 
-* Make sure it works using 'mode2' command
+* Grab an old television remote control (one that has a strong ir signal).
 
-* Grab an old television remote control (that has a strong ir signal)
+* Run 'mode2' command, and point your remote control at the infrared receiver.
 
 * Manually create a mapping of the buttons to a configuration file (irrecord, and this takes some time).
-   - Run 'irrecord --list-namespace' to see some of the key names of your buttons.
+   - Run 'irrecord --list-namespace' to see some of the "potential" key names of your buttons. "potential" because you name the buttons during the configurations steps of irrecord. You can use keys that fit the button's action, or not, it's up to you. But it needs to be one of the keys within that list.
 
 * Check to see if your mappings worked by using 'irw' command, and pressing buttons while pointing at your infrared receiver. You'll see the key names as console output.
 
@@ -29,17 +29,16 @@ Exploring Raspberry Pi as infrared receiver for fun sneaky projects
 * Point your remote control at the infrared receiver, and you should see the key names as console output.
 
 
-### Check out these two links for finer grain instructions.
+### Check out these two links for finer grain instructions for setting up the raspberry pi:
 
 http://forum.osmc.tv/showthread.php?tid=1954
 
 http://alexba.in/blog/2013/01/06/setting-up-lirc-on-the-raspberrypi/
 
 
-
 ## Output
 
-At the end of the day, you should see something like this in your console:
+At the end of the day, you should see something similar to this in your console:
 
 ```
 0000000000004102 00 KEY_2 /home/pi/sharp.conf
@@ -57,6 +56,4 @@ At the end of the day, you should see something like this in your console:
 00000000000042a2 00 KEY_VOLUMEDOWN /home/pi/sharp.conf
 ```
 
-Now let your imagination run wild.
-
-Bare in mind, each remote control will have a different configuration file based on frequencies and the internal workings of the remote control. There's no one size fits all, you have to manually map the buttons to configuration files (via irrecord command).
+This should be enough data to work with.
